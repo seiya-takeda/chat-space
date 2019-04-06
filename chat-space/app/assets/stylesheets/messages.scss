@@ -1,0 +1,153 @@
+// Place all the styles related to the messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$left-space:40px;
+$right-contents-width:calc(100vw-300px);
+
+@mixin fotter-line{
+  background-color:gray;
+  height:20px;
+}
+
+
+.header{
+  color:white;
+  background-color:#38AEF0;
+  text-align:center;
+  margin:0;
+  display:none;
+}
+
+.left-contents{
+  width:300px;
+  float:left;
+
+
+  .left-contents__user-setting{
+    background-color:#253141;
+    height:100px;     // Provisional-height
+    .left-contents__user-setting__user-name{
+     font-size:16px;
+     color:#ffffff;
+     font-weight:bold;
+     padding-top:35px;
+     margin:0;
+     padding-left:$left-space;
+   }
+ }
+ .left-contents__group-menu{
+  background-color:#2f3e51;
+        height:117vh;        // Provisional-height
+        overflow:scroll;
+        .left-contents__group-menu__group-name{
+          font-size:15px;
+          font-weight:bold;
+          color:#ffffff;
+          margin:0;
+          padding-bottom:5px;
+          padding-left:$left-space;
+
+        }
+        .left-contents__group-menu__group-tweet{
+          font-size:11px;
+          font-weight:bold;
+          color:#ffffff;
+          padding-left:$left-space;
+          padding-bottom:40px;
+
+        }
+      }
+    }
+
+    .right-contents{
+
+ width:calc(100vw - 319px);  // why?
+ float:left;
+ margin-left:0;
+
+ .right-contents__talk-group{
+  height:100px;
+        box-sizing:border-box;
+         padding-right:$left-space;
+  .right-contents__talk-group__group-name{
+    font-size:20px;
+    color:#333333;
+    padding-top:35px;
+    padding-bottom:15px;
+    padding-left:$left-space;
+    float:left;
+  }
+  .right-contents__talk-group__edit-button{
+    height:40px;
+    line-height:40px;
+    box-sizing:border-box;
+    padding:0 20px;
+    margin-top:30px;
+    color:#38aef0;
+    border:solid 1px #38aef0;
+    float:right;
+}
+  .right-contents__talk-group__group-member{
+    font-size:12px;
+    color:#999999;
+    padding-left:$left-space;
+    clear:both;
+  }
+}
+.right-contents__talk-room{
+  background-color:#fafafa;
+  .right-contents__talk-room__tweet-user{
+    font-size:14px;
+    color:#434a54;
+    font-weight:bold;
+    padding-top:46px;
+    padding-bottom:10px;
+    padding-left:$left-space;
+    float:left;
+  }
+  .right-contents__talk-room__tweet-date{
+    font-size:12px;
+    color:#999999;
+    float:left;
+    padding-top:46px;
+    margin-left:10px;
+  }
+  .right-contents__talk-room__tweet{
+    font-size:14px;
+    color:#434a54;
+    padding-bottom:40px;
+    margin-bottom:0;
+    padding-left:$left-space;
+    clear:both;
+  }
+}
+
+.fotter{
+  box-sizing:border-box ;
+  padding:20px 40px;
+  background-color:#ddd;
+  height:90px;
+}
+
+.fotter__message-form{
+  height:50px;
+  box-sizing:border-box ;
+    // position:relative;
+    width:calc(100% - 115px);
+        font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  .fotter__submit-button{
+    width:100px;
+    height:50px;
+    background-color:#38aef0;
+    color:white;
+    cursor:pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+}
