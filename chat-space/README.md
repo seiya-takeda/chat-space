@@ -36,15 +36,15 @@ Things you may want to cover:
 
 
 
-## tweetsテーブル
+## messageテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 |image|text|foreign_key: true|
-|tweet|text|foreign_key: true|
-|tweeted_at|datetime|null: false, foreign_key: true|
+|message|text|foreign_key: true|
+|messaged_at|datetime|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
